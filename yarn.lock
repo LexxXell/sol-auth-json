@@ -277,6 +277,14 @@ safe-buffer@^5.0.1:
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.2.1.tgz#1eaf9fa9bdb1fdd4ec75f58f9cdb4e6b7827eec6"
   integrity sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==
 
+sol-auth-json@lexxxell/sol-auth-json:
+  version "1.0.0"
+  resolved "https://codeload.github.com/lexxxell/sol-auth-json/tar.gz/4b48c0bfef6f741d9742645e3bbd722eec594601"
+  dependencies:
+    "@solana/web3.js" "^1.78.5"
+    tweetnacl "^1.0.3"
+    tweetnacl-util "^0.15.1"
+
 superstruct@^0.14.2:
   version "0.14.2"
   resolved "https://registry.yarnpkg.com/superstruct/-/superstruct-0.14.2.tgz#0dbcdf3d83676588828f1cf5ed35cda02f59025b"
