@@ -37,6 +37,17 @@ Generate a Solana authentication JSON object.
 - `wallet`: The public key of the wallet in Base58 encoding.
 - `signature`: The authentication signature in Base64 encoding.
 
+Returns odject `{ wallet, signature }`.
+
+Example:
+
+```js
+{
+  wallet: '5DJw2Cn7SjCazU93W4xnR8wr6jmEWqSYpmpS9SPXkTTf',
+  signature: 'IRDZSvKU4/qHNGm8+sxAFkTbN6yDr9pa0EOPCBjdjVng2MSepM4x7eln3ppWJuEw+S1L0VqrpSXR7aJWPuvBCg=='
+}
+```
+
 ## Backend Usage
 
 The following function is available for use in backend applications:
