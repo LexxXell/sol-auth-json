@@ -1,0 +1,15 @@
+{
+  "name": "sol-auth-json",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "node src/index.js",
+    "test": "node src/test.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.78.5",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1"
+  }
+}
