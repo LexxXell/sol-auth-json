@@ -35,7 +35,7 @@ Generate a Solana authentication JSON object.
 - `roundMs` (optional): The rounding interval in milliseconds (default is 300,000 ms or 5 minutes).
   Returns an object with the following properties:
 - `wallet`: The public key of the wallet in Base58 encoding.
-  signature: The authentication signature in Base64 encoding.
+- `signature`: The authentication signature in Base64 encoding.
 
 ## Backend Usage
 
