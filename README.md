@@ -17,7 +17,8 @@ Before using sol-auth-json, ensure you have the following dependencies installed
 - `@solana/web3.js`: Required for backend usage.
 - `tweetnacl`: Required for both frontend and backend.
 - `tweetnacl-util`: Required for both frontend and backend.
-  You can install these dependencies using Yarn or npm as needed.
+
+You can install these dependencies using `yarn` or `npm` as needed.
 
 ## Frontend Usage
 
