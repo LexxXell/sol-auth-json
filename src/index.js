@@ -21,14 +21,18 @@ function generateSolAuthJSON(keypair, msgBase = 'AUTH', roundMs = 300000) {
 /** FOR BACKEND */
 
 function confirmSolAuthJSON(solAuthJSON, msgBase = 'AUTH', roundMs = 300000) {
-  const signature = new Uint8Array(
-    atob(solAuthJSON.signature)
-      .split('')
-      .map((c) => c.charCodeAt(0)),
-  );
-  const publicKey = new solanaWeb3.PublicKey(solAuthJSON.wallet);
-  const msg = msgBase + (Math.ceil(Date.now() / roundMs) * roundMs).toString();
-  return nacl.sign.detached.verify(decodeUTF8(msg), signature, publicKey.toBytes());
+  try {
+    const signature = new Uint8Array(
+      atob(solAuthJSON.signature)
+        .split('')
+        .map((c) => c.charCodeAt(0)),
+    );
+    const publicKey = new solanaWeb3.PublicKey(solAuthJSON.wallet);
+    const msg = msgBase + (Math.ceil(Date.now() / roundMs) * roundMs).toString();
+    return nacl.sign.detached.verify(decodeUTF8(msg), signature, publicKey.toBytes());
+  } catch {
+    return false;
+  }
 }
 
 // *****************************
